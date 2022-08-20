@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Section 4.7.</title>
+</head>
+<body>
+    <p id="Condition"></p>
+    <div class="login">
+		<form action="#" method="POST" onSubmit="tombolsubmit()">
+			<div>
+				<label>Masukkan nilai X:</label>
+				<input type="text" name="nilaix" id="nilaix" />
+			</div>
+			<div>
+				<label>Masukkan nilai Y:</label>
+				<input type="text" name="nilaiy" id="nilaiy" />
+			</div>
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+    <script type="text/javascript">
+        function tombolsubmit(){
+            var x=document.getElementById("nilaix").value;
+            var y=document.getElementById("nilaiy").value;
+            if(x>y){
+                alert("Horee saya bisa!")
+            }else{
+                alert("Nilai X < Y")
+            }
+        }
+        //
+    </script>
+</body>
+</html>
