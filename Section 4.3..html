@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Section 4.3.</title>
+</head>
+<body>
+    <p id="aritmathic"></p>
+    <script>
+        let x="10"+10+10;
+        let y=10+10+"10";        
+        document.getElementById('aritmathic').innerHTML=(x+y);
+        //Output 1010102010, menunjukkan bahwa variable akan selalu dianggap sebagai text (string) ketika dideklarasikannya
+        //variable berupa string. Sehingga outputnya x=10(string)+10(string)+10(string) y=20(int) yang menjadi string karena ditambah 10 string
+    </script>
+</body>
+</html>
